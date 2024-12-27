@@ -1,0 +1,32 @@
+
+<main class="main">
+<div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="solicitudId">
+    <label for="userId">Id de usuario</label>
+    <input type="text" formControlName="userId" type="number"
+    placeholder="Ingresar ID">
+    <button type="submit">consultar usuario</button>
+    </form>
+</div>
+</main>
+
+<section>
+  <div class="separadorParte">
+    <h5> PARTE 2</h5>
+  </div>
+  <div id="solicitud">
+  <form class="formulario2" [formGroup]="ConsultaForm" (ngSubmit)="Consultar()" class="Consulta">
+  <label for="name">Nombre</label>
+  <input placeholder="ingresar nombre">
+  <label for="email">Correo electrónico</label>
+  <input placeholder="ingresar correo electrónico">
+  <label for="numberphone">Número telefonico</label>
+  <input type="number" placeholder="ingresar número telefonico">
+  <label for="address">Dirección</label>
+  <input placeholder="ingresar dirección">
+  <button type="submit">consultar usuario</button>
+  </form>
+</div>
+
+
+</section>
